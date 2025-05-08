@@ -27,13 +27,10 @@ network UAVNetwork_Decentralized
         }
 
         // Le drone serveur
-        uav[0]: AdhocHost {
-            parameters:
-                @display("i=misc/drone_server");
-        }
+     
 
         // Les autres drones clients
-        uav[1..4]: AdhocHost {
+        uav[5]: AdhocHost {
             parameters:
                 @display("i=misc/drone");
         }
